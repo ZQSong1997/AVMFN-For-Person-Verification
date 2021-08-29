@@ -5,7 +5,7 @@
 
 #### 模型架构
 ![Front-end feature extractor](https://images.gitee.com/uploads/images/2021/0829/184341_dea79126_7955921.png "屏幕截图.png")
-![back-end Gated Fusion Network](https://images.gitee.com/uploads/images/2021/0829/195640_2d64c449_7955921.png "屏幕截图.png")
+![back-end Gated Fusion Network](https://images.gitee.com/uploads/images/2021/0829/202522_84858183_7955921.png "屏幕截图.png")
 
 #### 使用说明
 1.  Face embeddings可在'DB/Vox1_Face/emb/'获取，其中vox1_face_D_embedding.npy和vox1_face_T_embedding.npy分别是Voxcelev1训练集和测试集的face图片的embeddings，为512维的向量。vox1_face_D_label.txt和vox1_face_T_label.txt为对应的label list，如：[id10001/1zcIwhmdeo4/0000375.jpg,id10001/1zcIwhmdeo4/0000475.jpg,...]
