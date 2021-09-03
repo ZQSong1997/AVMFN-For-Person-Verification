@@ -5,7 +5,7 @@
 
 ### Model architecture
 ![Front-end feature extractor](https://images.gitee.com/uploads/images/2021/0829/184341_dea79126_7955921.png "屏幕截图.png")
-![back-end Gated Fusion Network](https://images.gitee.com/uploads/images/2021/0829/210247_b3b1a566_7955921.png "屏幕截图.png")
+![back-end Gated Fusion Network](https://images.gitee.com/uploads/images/2021/0903/095703_c2670694_7955921.png "屏幕截图.png")
 
 ### datasets
 ![Voxceleb1 dataset](https://images.gitee.com/uploads/images/2021/0829/203933_f4923fee_7955921.png "屏幕截图.png")
