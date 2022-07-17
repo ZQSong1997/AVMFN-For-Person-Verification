@@ -10,9 +10,9 @@
 ### datasets
 ![Voxceleb1 dataset](https://images.gitee.com/uploads/images/2021/0829/203933_f4923fee_7955921.png "屏幕截图.png")
 1.  数据集采用Voxceleb1 dev set作为训练集，test set作为测试集。  [数据集官方链接](https://www.robots.ox.ac.uk/~vgg/data/voxceleb/)
-2.  Face embeddings可在'DB/Vox1_Face/emb/'获取，其中vox1_face_D_embedding.npy和vox1_face_T_embedding.npy分别是Voxcelev1训练集和测试集的face图片的embeddings，为512维的向量。vox1_face_D_label.txt和vox1_face_T_label.txt为对应的label list，如：[id10001/1zcIwhmdeo4/0000375.jpg,id10001/1zcIwhmdeo4/0000475.jpg,...]。（[百度云链接](https://pan.baidu.com/s/15T7tvXb-FUgpLU3kpQN7zw 
+2.  Face embeddings可在'DB/Vox1_Face/emb/'获取，其中vox1_face_D_embedding.npy和vox1_face_T_embedding.npy分别是Voxcelev1训练集和测试集的face图片的embeddings（512维）。vox1_face_D_label.txt和vox1_face_T_label.txt为对应的label list，如：[id10001/1zcIwhmdeo4/0000375.jpg,id10001/1zcIwhmdeo4/0000475.jpg,...]。（[百度云链接](https://pan.baidu.com/s/15T7tvXb-FUgpLU3kpQN7zw 
 ) 提取码：38gq）
-3.  Speaker embeddings可在'DB/Voxceleb1/emb/'获取，其中TTA_vox1_dev.pk和TTA_vox1_eval.pk分别是Voxcelev1训练集和测试集的wav语音的embeddings。是一个字典格式的文件，keys为Speaker id，如'id10001/1zcIwhmdeo4/00001.wav'，values为对应的1024维的embeddings。（[百度云链接](https://pan.baidu.com/s/1eNzLMzZmuKvgrxNm1XoRvQ) 提取码：bnk9）
+3.  Speaker embeddings可在'DB/Voxceleb1/emb/'获取，其中TTA_vox1_dev.pk和TTA_vox1_eval.pk分别是Voxcelev1训练集和测试集的wav语音的embeddings。是一个字典格式的文件，keys为Speaker id，如'id10001/1zcIwhmdeo4/00001.wav'，values为对应的embeddings（1024维）。（[百度云链接](https://pan.baidu.com/s/1eNzLMzZmuKvgrxNm1XoRvQ) 提取码：bnk9）
 4.  预训练模型可在'DNNs/Pre_trained_model/best_model.pkl'获得。
 
 ### Usage
@@ -21,8 +21,8 @@
 3.    评估模型：Run evaluation_model.py
 
 ### Reference
-[1] Schroff F, Kalenichenko D, Philbin J. Facenet: A unified embedding for face recognition and clustering[C]//Proceedings of the IEEE conference on computer vision and pattern recognition. 2015: 815-823.
-[2] Jung J, Kim S, Shim H, et al. Improved rawnet with feature map scaling for text-independent speaker verification using raw waveforms[J]. arXiv preprint arXiv:2004.00526, 2020.
+1.    [1] Schroff F, Kalenichenko D, Philbin J. Facenet: A unified embedding for face recognition and clustering[C]//Proceedings of the IEEE conference on computer vision and pattern recognition. 2015: 815-823.
+2.    [2] Jung J, Kim S, Shim H, et al. Improved rawnet with feature map scaling for text-independent speaker verification using raw waveforms[J]. arXiv preprint arXiv:2004.00526, 2020.
 
 
 
