@@ -1,7 +1,8 @@
 # Audio Visual Multimodel Fusion Network for Person Verification
 
 ### Overview
-本项目是基于人脸+声纹的多模态生物验证算法的实现，人脸特征采用Facenet模型[1]提取，声纹特征采用Rawnet2模型[2]提取。特征级融合网络采用Gated Multi-Modal Fusion Network。
+本项目是基于人脸+声纹的多模态生物验证算法的实现，人脸特征采用Facenet模型[1]提取，声纹特征采用Rawnet2模型[2]提取。
+通过在Voxceleb1数据集上训练和测试，EER指标最佳能达到0.548%，显著优于现有最先进的单模态的人脸识别或声纹识别模型，即使和同类型算法（人脸+声纹）相比，也达到了SOTA水平。
 
 ### Model architecture
 ![Front-end feature extractor](https://images.gitee.com/uploads/images/2021/0829/184341_dea79126_7955921.png "屏幕截图.png")
