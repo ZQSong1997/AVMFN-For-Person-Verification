@@ -1,9 +1,9 @@
-# Audio Visual Multimodel Fusion Network for Person Verification
+# Bimodal Adaptive Feature Fusion Network for Person Verification
 
 ### Overview
-本项目针对现目前仅采用人脸或声纹的单模态身份认证方法容易遭受欺骗攻击和环境噪声的不足，提出一种双模态自适应特征融合网络来同时融合人员的人脸和声纹特征，以得到更鲁棒的特征表示来完成身份认证。试验在Voxceleb1数据集上进行，在EER(平均错误概率)上的最佳试验结果为0.548%，显著优于现有最先进的人脸识别或声纹识别模型。和同类型算法（人脸+声纹）相比，也达到了SOTA水平。（
+本项目针对现目前仅采用人脸或声纹的单模态身份认证方法容易遭受欺骗攻击和环境噪声的不足，提出一种双模态自适应特征融合网络（BAFFN）来同时融合人员的人脸和声纹特征，以得到更鲁棒的特征表示来完成身份认证。试验在Voxceleb1数据集上进行，在EER(平均错误概率)上的最佳试验结果为0.548%，显著优于现有最先进的人脸识别或声纹识别模型。和同类型算法（人脸+声纹）相比，达到了SOTA水平。
 ### Model architecture
-本项目的人脸特征采用Facenet模型[1]提取，声纹特征采用Rawnet2模型[2]提取，特征提取过程和双模态自适应特征融合网络（BAFFN）设计如下图所示。另外还采用了数据增强和度量学习策略，进一步地，进一步降低了识别误差。
+本项目的人脸特征采用Facenet模型[1]提取，声纹特征采用Rawnet2模型[2]提取，特征提取过程和BAFFN的设计如下图所示。另外还采用了数据增强技术丰富了数据样本，以及利用度量学习策略，进一步降低了识别误差。
 ![Front-end feature extractor](https://images.gitee.com/uploads/images/2021/0829/184341_dea79126_7955921.png "屏幕截图.png")
 ![back-end Gated Fusion Network](https://images.gitee.com/uploads/images/2021/0903/095703_c2670694_7955921.png "屏幕截图.png")
 特别的，人脸特征和声纹特征也可采用其他更先进的单模态模型（如ArcFac和Rawnet3）进行特征提取，再利用BAFFN进行特征级训练，该方法具有普适性。
