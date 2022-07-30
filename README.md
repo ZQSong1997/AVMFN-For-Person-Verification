@@ -18,8 +18,8 @@
 
 ### Usage
 1.    数据预处理：Run data_preprocess.py
-2.    训练模型：Run trainning_AVN.py
-3.    评估模型：Run evaluation_model.py
+2.    模型训练：Run trainning_AVN.py
+3.    模型评估：Run evaluation_model.py
 
 ### Reference
 1.    [1] Schroff F, Kalenichenko D, Philbin J. Facenet: A unified embedding for face recognition and clustering[C]//Proceedings of the IEEE conference on computer vision and pattern recognition. 2015: 815-823.
